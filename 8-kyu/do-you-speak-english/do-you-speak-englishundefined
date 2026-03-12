@@ -1,0 +1,10 @@
+#include <string>
+#include <algorithm>
+​
+bool sp_eng(const std::string& sentence) {
+  std::string s = sentence;
+  for(char& c: s) {
+    c = tolower(c);
+  }
+  return s.find("english") != std::string::npos;
+}
