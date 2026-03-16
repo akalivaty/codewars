@@ -2,7 +2,6 @@
 ​
 std::string reverseString(const std::string &str)
 {
-  std::string str1 = str;
-  std::reverse(str1.begin(), str1.end());
-  return str1;
+  
+  return std::string(str.rbegin(), str.rend());
 }
